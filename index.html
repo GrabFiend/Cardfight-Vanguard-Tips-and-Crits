@@ -30,6 +30,26 @@
   </nav>
   
   <main>
+   <h1>
+   	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+  <li><a href="#">Royal Paladin</a></li>
+  <li><a href="#">Gold Paladin</a></li>
+
+  <li><a href="#">Narukami</a></li>
+  <li><a href="#">Kagero</a></li>
+
+  <li><a href="#">Dark Irregulars</a></li>
+	<li><a href="#">Spike Brothers</a></li>
+  <li><a href="#">Nova Grappler</a></li>
+  <li><a href="#">Dimension Police</a></li>
+  <li><a href="#">Link Joker</a></li>
+  
+</ul>
+   	
+   	
+   </h1>
     <h2><img src="neon.gif" width="480" height="270" alt=""/><img src="alfred exiv.gif" width="520" height="270" alt=""/></h2>
     <h2>&nbsp;</h2>
     <h2>About Website</h2>
@@ -97,7 +117,38 @@ function GEEKFORGEEKS()
    
   
     return true; 
-}</script> 
+}
+	  
+	  
+	  function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  </script> 
     	
     	
     	
