@@ -1,0 +1,47 @@
+@charset "UTF-8";
+#page {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(galaxy.jpg)
+}
+aside {
+	width: 175px;
+	float: right;
+	background-color: #82ADD0;
+	color: #FFFFFF;
+}
+nav {
+	background-color: darkmagenta; 
+	color: #F3EEEE;
+	width: 150px;
+	length: 180px;
+}
+header {
+	background-image: url(VANGUARD_LOGO_.png);
+	background-repeat: no-repeat;
+	height: 140px;
+	text-align: center;
+	font-size: 300%;
+	color:aqua;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+footer {
+	color: aliceblue;
+	text-align: center;
+	border-top: 2px solid #E14AD7;
+	border-bottom-color: #E14AD7;
+	border-right-color: #E14AD7;
+	border-left-color: #E14AD7;
+}
+footer .bottomNav {
+	width: 100%;
+	background-color: #FFFAFB;
+	color: #050404;
+}
+#page main {
+	color: #DCE81D;
+	font-size: large;
+	font-weight: bold;
+}
+
